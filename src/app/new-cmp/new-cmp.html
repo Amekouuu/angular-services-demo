@@ -1,3 +1,17 @@
-<p>{{newComponent}}</p>
-<p>Today's Date: {{todaydate}} </p>
+<div class="item-card">
+  <div class="header">
+    <span class="dot"></span>
+    <h3>{{ newComponent }}</h3>
+  </div>
 
+  <div class="content">
+    <div class="row">
+      <span class="text">Today's Date</span>
+      <span class="value">{{ todaydate }}</span>
+    </div>
+
+    <div class="status-box">
+      <span>{{ componentproperty }}</span>
+    </div>
+  </div>
+</div>
