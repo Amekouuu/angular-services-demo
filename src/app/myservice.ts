@@ -10,5 +10,6 @@ export class Myservice {
     let ndate = new Date ();
     return ndate;
   }
+  serviceproperty = "My service component";
 
 }

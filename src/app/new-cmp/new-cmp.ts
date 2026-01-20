@@ -11,9 +11,14 @@ import { Component } from '@angular/core';
 export class NewCmp {
   todaydate;
   newComponent = "Entered New Component";
+  componentproperty;
 
   constructor(private myservice:Myservice){
     this.todaydate = this.myservice.showTodayDate()
+    this.myservice.serviceproperty = 'Component Created';
+    this.componentproperty = this.myservice.serviceproperty;
+
+
   }
 
 }

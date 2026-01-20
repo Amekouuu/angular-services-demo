@@ -13,7 +13,9 @@ export class App {
   protected readonly title = signal('angular-services-demo');
 
   todaydate;
+  componentproperty;
   constructor(private myservice:Myservice){
     this.todaydate = this.myservice.showTodayDate()
+    this.componentproperty = this.myservice.serviceproperty;
   }
 }
